@@ -11,11 +11,32 @@
   <body>
     <main>
 	<a href="https://play.onions.life">
-  		<button>Play</button>
-	</a><br>
+  		<button id="playbtn">Play</button>
+	</a>
 
-        <h1>Welcome to Onion's Life!</h1>  
+        <h1>Onion's Life</h1>  
     </main>
 	<script src="index.js"></script>
+	  <style>
+		  /* CSS for a big rounded button */
+		.playbtn {
+		    background-color: lightblue; /* Light blue background */
+		    border: 2px solid black; /* Black border */
+				color: white; /* White text */
+		    padding: 15px 30px; /* Padding for a big button */
+		    font-size: 16px; /* Larger font size for the text */
+		    border-radius: 50px; /* Rounded corners */
+		    cursor: pointer; /* Pointer cursor on hover */
+		    text-align: center; /* Centered text */
+		    display: inline-block; /* Inline-block to allow padding and margin */
+		    text-decoration: none; /* No underline */
+		    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+		}
+		
+		/* Optional: Hover effect */
+		.playbtn:hover {
+		    background-color: #add8e6; /* Slightly darker blue on hover */
+		}
+	  </style>
   </body>
 </html>
