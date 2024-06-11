@@ -1,4 +1,12 @@
-		  /* CSS for a big rounded button */
+		 /*import the custom font from the .woff2 font*/
+		 @font-face {
+			font-family: 'OnionFont';
+			src: url('../fonts/apl386.woff2') format('woff2');
+			font-weight: normal;
+			font-style: normal;
+		  }
+		 
+		 /* CSS for a big rounded button */
 		.playbtn {
 		    background-color: lightblue; /* Light blue background */
 		    border: 2px solid black; /* Black border */
