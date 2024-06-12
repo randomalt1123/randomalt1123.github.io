@@ -1,27 +1,40 @@
+		 *{
+			background-color: #99ccffff;
+			font-family: 'OnionFont', sans-serif;
+			color: white;
+			text-outline: black; 
+			text-shadow: 
+			-1px -1px 0 #000,  
+			 1px -1px 0 #000,
+			-1px  1px 0 #000,
+			 1px  1px 0 #000;
+		 }
 		 /*import the custom font from the .woff2 font*/
 		 @font-face {
 			font-family: 'OnionFont';
-			src: url('../fonts/apl386.woff2') format('woff2');
+			src: url('./apl386.woff2') format('woff2');
 			font-weight: normal;
 			font-style: normal;
 		  }
+         .h1{
+           text-align: center;
+		 }
 		 
 		 /* CSS for a big rounded button */
-		.playbtn {
-		    background-color: lightblue; /* Light blue background */
-		    border: 2px solid black; /* Black border */
-				color: white; /* White text */
-		    padding: 15px 30px; /* Padding for a big button */
-		    font-size: 16px; /* Larger font size for the text */
-		    border-radius: 50px; /* Rounded corners */
-		    cursor: pointer; /* Pointer cursor on hover */
-		    text-align: center; /* Centered text */
-		    display: inline-block; /* Inline-block to allow padding and margin */
-		    text-decoration: none; /* No underline */
-		    transition: background-color 0.3s ease; /* Smooth transition for background color change */
-		}
+		 #playbtn {
+			background-color: #00AEEF; /* Blue background color */
+			color: white; /* White text color */
+			border: 3px solid black; /* Black border */
+			border-radius: 10px; /* Slightly rounded corners */
+			padding: 10px 20px; /* Padding inside the button */
+			font-size: 24px; /* Larger font size */
+			font-family: 'OnionFont', sans-serif; /* Font family */
+			text-align: center; /* Center the text */
+			text-decoration: none; /* Remove underline */
+			display: inline-block; /* Display as an inline block */
+			cursor: pointer; /* Pointer cursor on hover */
+		  }
 		
-		/* Optional: Hover effect */
-		.playbtn:hover {
-		    background-color: #add8e6; /* Slightly darker blue on hover */
-		}
+		  #playbtn:hover {
+			background-color: #008FCC; /* Darker blue background on hover */
+		  }
