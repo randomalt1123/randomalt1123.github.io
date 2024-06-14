@@ -79,3 +79,35 @@ footer {
     padding: 10px;
 
 }
+.trivia {
+            background-color: #99ccff;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            color: white;
+        }
+
+        .trivia h1 {
+            font-size: 2em;
+            color: white;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .trivia ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .trivia li {
+            margin: 10px 0;
+            font-size: 1.1em;
+            color: white;
+        }
+
+        .trivia p {
+            font-size: 1em;
+            color: white;
+            margin-top: 20px;
+        }
