@@ -1,28 +1,44 @@
+---
+title: Onion's Life
+image: onion.png
+locale: en_US
+description: Experience the adventure of a lifetime as an onion! This video game is epic, and has all the features of a modern platformer.
+---
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Onion's Life!</title>
-	<link rel="stylesheet" href="./style.css">
-	
-    <link rel="icon" href="./onion.png" type="image/x-icon">
-
-	  
-  </head>
-  <body>
+    <title>Onion's Life Game</title>
+    <link rel="stylesheet" href="style.css">
+    {% seo %}
+</head>
+<body>
+    <header>
+        <h1>Onion's Life</h1>
+        <p>Experience the adventure of a lifetime as an onion!</p>
+    </header>
     <main>
-		<h1>Onion's Life</h1>  
-		<img src="./onion.png" alt="Onion's Life">
-	<a href="https://play.onions.life">
-  		<button id = playbtn>Play</button>
-	</a>
-
-        
+        <section class="promo">
+            <a href="https://play.onions.life" target="_blank">
+              <button id="playbtn" >Play Now</button>
+            </a>
+        </section>
+        <section class="screenshots">
+            <h2>Screenshots</h2>
+            <div class="gallery">
+                <img src="screenshots/Screenshot 2024-06-14 at 2.19.18 PM.png" alt="Screenshot 1">
+                <img src="screenshots/Screenshot 2024-06-14 at 2.18.43 PM.png" alt="Screenshot 2">
+                <img src="screenshots/Screenshot 2024-06-14 at 2.17.04 PM.png" alt="Screenshot 3">
+            </div>
+        </section>
+        <section class="about">
+            <h2>About the Game</h2>
+            <p>Onion's Life is an exciting game where you navigate various challenges as an onion. Jump, collect coins, and avoid dangers to progress through different levels.</p>
+        </section>
     </main>
-	<script src="index.js"></script>
-	  
-  </body>
+    <footer>
+        <p>&copy; 2024 Onion's Life. All rights reserved.</p>
+    </footer>
+</body>
 </html>
-

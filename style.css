@@ -1,40 +1,81 @@
-		 *{
-			background-color: #99ccffff;
-			font-family: 'OnionFont', sans-serif;
-			color: white;
-			text-outline: black; 
-			text-shadow: 
-			-1px -1px 0 #000,  
-			 1px -1px 0 #000,
-			-1px  1px 0 #000,
-			 1px  1px 0 #000;
-		 }
-		 /*import the custom font from the .woff2 font*/
-		 @font-face {
-			font-family: 'OnionFont';
-			src: url('./apl386.woff2') format('woff2');
-			font-weight: normal;
-			font-style: normal;
-		  }
-         .h1{
-           text-align: center;
-		 }
-		 
-		 /* CSS for a big rounded button */
-		 #playbtn {
-			background-color: #00AEEF; /* Blue background color */
-			color: white; /* White text color */
-			border: 3px solid black; /* Black border */
-			border-radius: 10px; /* Slightly rounded corners */
-			padding: 10px 20px; /* Padding inside the button */
-			font-size: 24px; /* Larger font size */
-			font-family: 'OnionFont', sans-serif; /* Font family */
-			text-align: center; /* Center the text */
-			text-decoration: none; /* Remove underline */
-			display: inline-block; /* Display as an inline block */
-			cursor: pointer; /* Pointer cursor on hover */
-		  }
-		
-		  #playbtn:hover {
-			background-color: #008FCC; /* Darker blue background on hover */
-		  }
+@font-face {
+    font-family: 'OnionFont';
+    src: url('./apl386.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    background-color: #99ccff;
+    font-family: 'OnionFont', sans-serif;
+    color: white;
+    text-outline: black; 
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+.h1 {
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.promo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#playbtn {
+    background-color: #00AEEF;
+    color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#playbtn:hover {
+    background-color: #008FCC;
+}
+
+.screenshots {
+    margin: 20px 0;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    max-width: 30%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.about {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+
+}
