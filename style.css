@@ -111,3 +111,20 @@ footer {
             color: white;
             margin-top: 20px;
         }
+
+        .youtube-shorts {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .youtube-shorts h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: white;
+        }
+        
+        .youtube-shorts iframe {
+            border: 2px solid #ddd;
+            border-radius: 10px;
+        }
+        
