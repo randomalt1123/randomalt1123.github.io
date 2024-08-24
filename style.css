@@ -35,6 +35,13 @@ main {
     margin: 20px 0;
 }
 
+.promo-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 #playbtn {
     background-color: #00AEEF;
     color: white;
@@ -46,10 +53,20 @@ main {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+    height: 60px; /* Adjust the height */
+    width: 200px; /* Increased the width */
 }
 
 #playbtn:hover {
     background-color: #008FCC;
+}
+
+
+#playstore-badge {
+    height: 60px; /* Matches the height of the Play Now button */
+    width: auto;
+    border: none; /* Remove border so it's outside the blue box */
+    border-radius: 0;
 }
 
 .screenshots {
@@ -77,54 +94,53 @@ main {
 footer {
     text-align: center;
     padding: 10px;
-
 }
+
 .trivia {
-            background-color: #99ccff;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px;
-            color: white;
-        }
+    background-color: #99ccff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+}
 
-        .trivia h1 {
-            font-size: 2em;
-            color: white;
-            margin-bottom: 10px;
-            text-align: center;
-        }
+.trivia h1 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
 
-        .trivia ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
+.trivia ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
 
-        .trivia li {
-            margin: 10px 0;
-            font-size: 1.1em;
-            color: white;
-        }
+.trivia li {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: white;
+}
 
-        .trivia p {
-            font-size: 1em;
-            color: white;
-            margin-top: 20px;
-        }
+.trivia p {
+    font-size: 1em;
+    color: white;
+    margin-top: 20px;
+}
 
-        .youtube-shorts {
-            text-align: center;
-            margin: 20px 0;
-        }
-        
-        .youtube-shorts h2 {
-            margin-bottom: 20px;
-            font-size: 24px;
-            color: white;
-        }
-        
-        .youtube-shorts iframe {
-            border: 2px solid #ddd;
-            border-radius: 10px;
-        }
-        
+.youtube-shorts {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.youtube-shorts h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.youtube-shorts iframe {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
