@@ -61,7 +61,6 @@ main {
     background-color: #008FCC;
 }
 
-
 #playstore-badge {
     height: 60px; /* Matches the height of the Play Now button */
     width: auto;
@@ -129,6 +128,41 @@ footer {
     margin-top: 20px;
 }
 
+.awards {
+    text-align: center;
+    margin: 20px;
+    background-color: #99ccff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    color: white;
+}
+
+.awards h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.award-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.award-item img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.award-item p {
+    font-size: 18px;
+    color: white;
+}
+
 .youtube-shorts {
     text-align: center;
     margin: 20px 0;
@@ -143,4 +177,13 @@ footer {
 .youtube-shorts iframe {
     border: 2px solid #ddd;
     border-radius: 10px;
+}
+
+footer .follow-us {
+    margin-top: 20px;
+}
+
+footer .follow-us .twitter-follow-button {
+    display: inline-block;
+    margin: 10px 0;
 }
