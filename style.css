@@ -43,7 +43,7 @@ main {
 }
 
 #playbtn {
-    background-color: #00AEEF;
+    background-color: #48e833;
     color: white;
     border: 3px solid black;
     border-radius: 10px;
@@ -58,7 +58,7 @@ main {
 }
 
 #playbtn:hover {
-    background-color: #008FCC;
+    background-color: #35b025;
 }
 
 #designbtn {
@@ -72,7 +72,7 @@ main {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    height: 60px; /* Adjust the height */
+    height: 80px; /* Adjust the height */
     width: 200px; /* Increased the width */
 }
 
