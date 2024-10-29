@@ -43,7 +43,7 @@ main {
 }
 
 #playbtn {
-    background-color: #48e833;
+    background-color: #2ca600;
     color: white;
     border: 3px solid black;
     border-radius: 10px;
@@ -58,7 +58,7 @@ main {
 }
 
 #playbtn:hover {
-    background-color: #35b025;
+    background-color: #1f7500;
 }
 
 #designbtn {
