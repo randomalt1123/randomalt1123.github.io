@@ -61,6 +61,25 @@ main {
     background-color: #008FCC;
 }
 
+#designbtn {
+    background-color: #346eeb;
+    color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    height: 60px; /* Adjust the height */
+    width: 200px; /* Increased the width */
+}
+
+#designbtn:hover {
+    background-color: #2c5bbf;
+}
+
 #playstore-badge {
     height: 60px; /* Matches the height of the Play Now button */
     width: auto;
