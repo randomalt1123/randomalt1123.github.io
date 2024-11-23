@@ -206,3 +206,21 @@ footer .follow-us .twitter-follow-button {
     display: inline-block;
     margin: 10px 0;
 }
+
+@media (max-width: 600px) {
+    .promo-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #playbtn, #designbtn {
+        width: 80%;
+        max-width: 200px;
+    }
+
+    #playstore-badge {
+        width: 80%;
+        max-width: 200px;
+    }
+}
+
