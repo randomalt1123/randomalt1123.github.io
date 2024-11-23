@@ -42,8 +42,7 @@ main {
     gap: 10px;
 }
 
-#playbtn {
-    background-color: #2ca600;
+#playbtn, #designbtn {
     color: white;
     border: 3px solid black;
     border-radius: 10px;
@@ -53,37 +52,32 @@ main {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    height: 60px; /* Adjust the height */
-    width: 200px; /* Increased the width */
+    width: auto;
+    max-width: 100%;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+#playbtn {
+    background-color: #00AEEF; /* Updated to #00AEEF */
 }
 
 #playbtn:hover {
-    background-color: #1f7500;
+    background-color: #008CBA; /* Slightly darker shade for hover effect */
 }
 
 #designbtn {
-    background-color: #346eeb;
-    color: white;
-    border: 3px solid black;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    height: 80px; /* Adjust the height */
-    width: 200px; /* Increased the width */
+    background-color: #FF6600; /* Chosen complementary color */
 }
 
 #designbtn:hover {
-    background-color: #2c5bbf;
+    background-color: #E65C00; /* Slightly darker shade for hover effect */
 }
 
 #playstore-badge {
     height: 60px; /* Matches the height of the Play Now button */
     width: auto;
-    border: none; /* Remove border so it's outside the blue box */
+    border: none; /* Remove border */
     border-radius: 0;
 }
 
@@ -207,6 +201,7 @@ footer .follow-us .twitter-follow-button {
     margin: 10px 0;
 }
 
+/* Responsive adjustments for small screens */
 @media (max-width: 600px) {
     .promo-buttons {
         flex-direction: column;
@@ -214,13 +209,18 @@ footer .follow-us .twitter-follow-button {
     }
 
     #playbtn, #designbtn {
-        width: 80%;
-        max-width: 200px;
+        font-size: 20px;
+        padding: 10px 15px;
+        width: auto;
+        max-width: 90%;
     }
 
     #playstore-badge {
-        width: 80%;
-        max-width: 200px;
+        width: 200px;
+        max-width: 90%;
+    }
+
+    .gallery img {
+        max-width: 90%;
     }
 }
-
