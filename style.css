@@ -5,8 +5,11 @@
     font-style: normal;
 }
 
-* {
+body {
     background-color: #99ccff;
+}
+
+* {
     font-family: 'OnionFont', sans-serif;
     color: white;
     text-shadow: 
@@ -21,8 +24,44 @@ h1 {
 }
 
 header {
+    position: relative;
     padding: 20px;
     text-align: center;
+    overflow: hidden;
+}
+
+/* Clouds container where clouds will be spawned */
+.clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    pointer-events: none; /* allows clicks to pass through */
+}
+
+/* Base cloud style */
+.cloud {
+    position: absolute;
+    width: 100px;
+    /* The animation moves the cloud from left (-200px) to past the right edge */
+    animation: cloud-animation linear infinite;
+}
+
+/* Cloud animation */
+@keyframes cloud-animation {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(150vw);
+    }
+}
+
+header h1,
+header p {
+    position: relative;
+    z-index: 2; /* ensures text is above clouds */
 }
 
 main {
@@ -58,25 +97,25 @@ main {
 }
 
 #playbtn {
-    background-color: #00AEEF; /* Updated to #00AEEF */
+    background-color: #00AEEF;
 }
 
 #playbtn:hover {
-    background-color: #008CBA; /* Slightly darker shade for hover effect */
+    background-color: #008CBA;
 }
 
 #designbtn {
-    background-color: #FF6600; /* Chosen complementary color */
+    background-color: #FF6600;
 }
 
 #designbtn:hover {
-    background-color: #E65C00; /* Slightly darker shade for hover effect */
+    background-color: #E65C00;
 }
 
 #playstore-badge {
-    height: 60px; /* Matches the height of the Play Now button */
+    height: 60px;
     width: auto;
-    border: none; /* Remove border */
+    border: none;
     border-radius: 0;
 }
 
@@ -116,11 +155,6 @@ main {
 
 .about {
     margin: 20px 0;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
 }
 
 .trivia {
@@ -172,6 +206,11 @@ footer {
     border-radius: 10px;
 }
 
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
 footer .follow-us {
     margin-top: 20px;
 }
@@ -191,15 +230,15 @@ footer .follow-us .twitter-follow-button {
     #playbtn, #designbtn {
         font-size: 20px;
         padding: 10px 15px;
-        width: 90%;           /* Widen the buttons to take up more of the screen */
-        max-width: 400px;     /* Set a reasonable max-width */
-        margin: 10px 0;       /* Add margin for spacing between buttons */
+        width: 90%;
+        max-width: 400px;
+        margin: 10px 0;
     }
 
     #playstore-badge {
         width: 90%;
         max-width: 400px;
-        margin: 10px 0;       /* Add margin for consistent spacing */
+        margin: 10px 0;
     }
 
     .gallery img {

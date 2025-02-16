@@ -18,7 +18,7 @@ description: Experience the adventure of a lifetime as an onion in Onion's Life!
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
     <link rel="icon" href="onion.png" type="image/png">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Onion's Life Game</title>
@@ -27,11 +27,13 @@ description: Experience the adventure of a lifetime as an onion in Onion's Life!
 </head>
 <body>
     <header>
+        
         <h1>Onion's Life</h1>
         <p>Experience the adventure of a lifetime as an onion!</p>
     </header>
     <main>
         <section class="promo">
+            <div class="clouds"></div>
             <div class="promo-buttons">
                 <a href="https://play.onions.life" target="_blank">
                     <button id="playbtn">Play Now</button>
@@ -76,7 +78,7 @@ description: Experience the adventure of a lifetime as an onion in Onion's Life!
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Onion's Life. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Onion's Life. All rights reserved.</p>
         <p><a href="https://play.onions.life/privacypolicy.html" target="_blank">Privacy Policy</a></p>
         <div class="follow-us">
             <a href="https://twitter.com/onionslife?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">
